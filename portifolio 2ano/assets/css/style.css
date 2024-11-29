@@ -1,0 +1,116 @@
+/* Geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #e0f7f4; /* Verde-água claro */
+    background-color: #121212; /* Preto */
+}
+
+/* Cabeçalho */
+header {
+    background: #121212; /* Preto */
+    color: #e0f7f4;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header .menu a {
+    text-decoration: none;
+    color: #e0f7f4;
+    font-weight: bold;
+}
+
+/* Hero */
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #0a0a0a, #00b8a9);
+    color: #e0f7f4;
+    text-align: center;
+}
+
+#hero button {
+    background: #00b8a9;
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Seções */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #121212;
+}
+
+/* Portfólio */
+#portfolio .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+#portfolio .gallery .item {
+    background: #1c1c1c;
+    color: #e0f7f4;
+    border: 1px solid #00b8a9;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+#portfolio .gallery .item:hover {
+    transform: scale(1.05);
+    background: #00b8a9;
+    color: #121212;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea, form button {
+    background: #1c1c1c;
+    color: #e0f7f4;
+    border: 1px solid #00b8a9;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background: #00b8a9;
+    color: #121212;
+    cursor: pointer;
+    font-weight: bold;
+}

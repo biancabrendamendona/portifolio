@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Marketing e Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="sua-logo.png" alt="Minha Logo" class="logo"> <!-- Substitua "sua-logo.png" pela sua logo -->
+            <ul class="menu">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Transformando ideias em resultados visuais</h1>
+        <p>Design criativo e estratégias eficazes para sua marca.</p>
+        <button onclick="scrollToSection('sobre')">Saiba Mais</button>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Olá, sou Carlos, especialista em marketing e design gráfico com experiência. Trabalho com ferramentas como Adobe Suite, Figma e Canva para criar soluções impactantes.</p>
+    </section>
+
+    <section id= "portfolio">
+        <h2>Portfólio</h2>
+        <div class="gallery">
+            <div class="item">Projeto 1</div>
+            <div class="item">Projeto 2</div>
+            <div class="item">Projeto 3</div>
+            <div class="item">Projeto 4</div>
+        </div>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="contactForm">
+            <label for="name">Nome:brenda bianca carlos</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+            <label for="email">Email:@bbccbbyyy.gmail.com </label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Marketing & Design. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
